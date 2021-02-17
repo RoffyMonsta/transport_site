@@ -17,7 +17,6 @@ function fixNav() {
         document.body.classList.remove('fixed-nav');
         document.body.style.paddingTop = 0;
     }
-    console.log(topOfNav);
 
 }
 
