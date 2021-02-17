@@ -1,9 +1,15 @@
 // Navbar animation
 const nav = document.querySelector('#menu-main');
 let topOfNav = nav.offsetTop;
+let scrolled = 1;
 
 function fixNav() {
-    console.log(window.scrollY, topOfNav);
+    if (window.scrollY > 370 && scrolled) {
+        $(document).ready(function() {
+            $('.count').countTo();
+        });
+        scrolled = 0;
+    }
     if (window.scrollY >= topOfNav) {
         document.body.style.paddingTop = nav.offsetHeight + 'px';
         document.body.classList.add('fixed-nav');
@@ -11,10 +17,8 @@ function fixNav() {
         document.body.classList.remove('fixed-nav');
         document.body.style.paddingTop = 0;
     }
-    if (window.scrollY > 370) {
-        $(document).ready(function() {
-            $('.count').countTo();
-        });
-    }
+    console.log(topOfNav);
+
 }
+
 window.addEventListener('scroll', fixNav);
