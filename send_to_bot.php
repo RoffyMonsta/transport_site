@@ -1,7 +1,7 @@
 <?php
 if($_SERVER['REQUEST_METHOD'] == "POST"){
 
-    $secret_token = "1614286885:AAG_GCD9ObtcStI92Z_MnPbvChAP1KIv4V8";
+    $secret_token = "1614286885:AAEhEJD7vXkExtI5o9Z2GkkT50KcOZRC94Y";
     $telegram_id = "471922503";
     $pesan_teks = $_POST ['pesan_teks'];
 
@@ -19,6 +19,6 @@ function sendMessage($telegram_id, $pesan_teks, $secret_token) {
 }
 
 sendMessage($telegram_id, $pesan_teks, $secret_token);
-echo "<script>window.location.href = 'index.html';</script>";
+echo "<script>window.location.href = 'thank_you.html'; </script>";
 }
 ?>

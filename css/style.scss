@@ -408,6 +408,15 @@ hr {
     background: #9e9d9d;
 }
 
+.thankyou {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
 footer a {
     text-decoration: none;
     cursor: pointer;
