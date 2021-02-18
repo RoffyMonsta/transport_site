@@ -19,6 +19,6 @@ function sendMessage($telegram_id, $pesan_teks, $secret_token) {
 }
 
 sendMessage($telegram_id, $pesan_teks, $secret_token);
-echo "<script>alert('Pesan berhasil terkirim!'); window.location.href = 'index.html';</script>";
+echo "<script>window.location.href = 'index.html';</script>";
 }
 ?>
