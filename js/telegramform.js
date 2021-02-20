@@ -21,15 +21,21 @@
                     message.html(respond.err).css('color', '#d42121');
                     setTimeout(() => {
                         message.text('');
-                    }, 3000);
+                    }, 6000);
+
+
                 } else if (respond.okSend) {
                     message.html(respond.okSend).css('color', '#21d4bb');
                     setTimeout(() => {
                         message.text('');
-                    }, 3000);
+                        location.reload();
+                    }, 2000);
+
+
                 } else {
                     alert('Необработанная ошибка. Проверьте консоль и устраните.');
                 }
+
             },
         });
     });
